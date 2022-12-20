@@ -1,6 +1,7 @@
 <script lang="ts">
     import { ToDoList } from './todo-list'
-    import Observer from "svelte-mobx-observer"
+    import Observer from 'svelte-mobx-observer' 
+    import x from "./test"
 
 	export let name;
 
@@ -15,7 +16,7 @@
         i = new ToDoList({name: 'test3'}); await i.save()
         i = new ToDoList({name: 'test4'}); await i.save()
         i = new ToDoList({name: 'test5'}); await i.save()
-        query = ToDoList.load() 
+        query = ToDoList.getQuery() 
         console.log('init')
     }
     init()
@@ -40,9 +41,9 @@
 <template lang="pug">
 Observer
     main
-        h1 Hello {name}!
+        h1 Hello {name} {x}!
         p
-            | Visit the 
+            | Visit the  
             a(href='https://svelte.dev/tutorial') Svelte tutorial
             |  to learn how to build Svelte apps.
         div 

@@ -657,17 +657,21 @@ mkdirp@~1.0.4:
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-"mobx-orm@git+https://github.com/Andrey-Omelyanuk/mobx-orm.git#dd85a111f3c553ed34246a1d8ce0faadbbaf4246":
-  version "1.0.0-beta5"
-  resolved "git+ssh://git@github.com/Andrey-Omelyanuk/mobx-orm.git#dd85a111f3c553ed34246a1d8ce0faadbbaf4246"
-  integrity sha512-fF32ScOTLEV4AxpSvtozCFT6oDNtF5WJ1A/5EWrzQ5PDMlspn/XuQnmhnTirTSi+IkgteY5qZNveGlWXgymLpw==
+"mobx-orm@git+https://github.com/Andrey-Omelyanuk/mobx-orm.git#1.1.47":
+  version "1.0.47"
+  resolved "git+https://github.com/Andrey-Omelyanuk/mobx-orm.git#dfb2e1851d7c220d3e337eabeea95f0e4ca68b38"
   dependencies:
     mobx "^6.3.0"
 
-mobx@^6.3.0, mobx@^6.3.6:
+mobx@^6.3.0:
   version "6.5.0"
   resolved "https://registry.npmjs.org/mobx/-/mobx-6.5.0.tgz"
   integrity sha512-pHZ/cySF00FVENDWIDzJyoObFahK6Eg4d0papqm6d7yMkxWTZ/S/csqJX1A3PsYy4t5k3z2QnlwuCfMW5lSEwA==
+
+mobx@~6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-6.7.0.tgz#2d805610fee1801fd015c54fd5400d2601aa3768"
+  integrity sha512-1kBLBdSNG2bA522HQdbsTvwAwYf9hq9FWxmlhX7wTsJUAI54907J+ozfGW+LoYUo06vjit748g6QH1AAGLNebw==
 
 mri@^1.1.0:
   version "1.2.0"
@@ -995,9 +999,9 @@ serialize-javascript@^4.0.0:
   dependencies:
     randombytes "^2.1.0"
 
-sirv-cli@^2.0.0:
+sirv-cli@~2.0.2:
   version "2.0.2"
-  resolved "https://registry.npmjs.org/sirv-cli/-/sirv-cli-2.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/sirv-cli/-/sirv-cli-2.0.2.tgz#4b25ff8dc577be41588357c1f87fbf264a1bba55"
   integrity sha512-OtSJDwxsF1NWHc7ps3Sa0s+dPtP15iQNJzfKVz+MxkEo3z72mCD+yu30ct79rPr0CaV1HXSOBp+MIY5uIhHZ1A==
   dependencies:
     console-clear "^1.1.0"
@@ -1104,10 +1108,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svelte-mobx-observer@1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/svelte-mobx-observer/-/svelte-mobx-observer-1.0.7.tgz#cb90fddfee00cbba011cbf3c1a61ada99a2909e7"
-  integrity sha512-5ffSvP2qVNTq9Acot1CxViNwLodBEFhIc01YfTFOfc89GHysBpbLKp90tohuLf6bbnN8zKLORfPfHkPPHOvOoA==
+svelte-mobx-observer@~1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/svelte-mobx-observer/-/svelte-mobx-observer-1.0.10.tgz#a5c679570ccb17f4bd3bff4bb213698f9956938b"
+  integrity sha512-ApI7qmjh6lYyXlK6QwN5fWTzI9YAw8xKTstzHp7lwNAEAPa3bSISSrqUlJRfrUEUxwgq1c58owq0cfKxg8zxpQ==
 
 svelte-preprocess@^4.10.6:
   version "4.10.6"

@@ -27,9 +27,9 @@
     "tslib": "^2.3.1"
   },
   "dependencies": {
-    "mobx": "^6.3.6",
-    "mobx-orm": "git+https://github.com/Andrey-Omelyanuk/mobx-orm.git#dd85a111f3c553ed34246a1d8ce0faadbbaf4246",
-    "sirv-cli": "^2.0.0",
-    "svelte-mobx-observer": "1.0.7"
+    "mobx": "~6.7.0", 
+    "mobx-orm": "git+https://github.com/Andrey-Omelyanuk/mobx-orm.git#1.1.47",
+    "sirv-cli": "~2.0.2",
+    "svelte-mobx-observer": "~1.0.10" 
   }
 }
