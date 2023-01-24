@@ -1,6 +1,7 @@
 <script lang="ts">
     import { ToDoList } from './todo-list'
     import Observer from 'svelte-mobx-observer' 
+    import ToDoListView from './ToDoListView.svelte'
     import x from "./test"
 
 	export let name;
@@ -10,12 +11,6 @@
 
     let query = null
     async function init()  {
-        let i 
-        i = new ToDoList({name: 'test1'}); await i.save()
-        i = new ToDoList({name: 'test2'}); await i.save()
-        i = new ToDoList({name: 'test3'}); await i.save()
-        i = new ToDoList({name: 'test4'}); await i.save()
-        i = new ToDoList({name: 'test5'}); await i.save()
         query = ToDoList.getQuery() 
         console.log('init')
     }
@@ -47,15 +42,10 @@ Observer
             a(href='https://svelte.dev/tutorial') Svelte tutorial
             |  to learn how to build Svelte apps.
         div 
-            | {#if query && query.items }
             div
                 button(on:click='{create}') Create
                 button(on:click='{change}') Change 
-                lu
-                    | {#each query.items as item }
-                    li {item.id} {item.name}
-                    | {/each}
-            | {/if}
+            ToDoListView(query='{query}')
 </template>
 
 <style lang="stylus">
