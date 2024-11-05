@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  front:
+    build: { context: . , target : dev }
+    user: "${UID}:${GID}"
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
+      - 5173:5173
+    stdin_open: true # docker run -i
+    tty       : true # docker run -t
+    command: sh -c "cd my-app && yarn install && yarn dev"
+    # command: sh -c "npx sv create test"
